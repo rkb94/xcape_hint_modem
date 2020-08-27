@@ -1,0 +1,7 @@
+{
+  "name": "XCAPE_HINT_MODEM",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

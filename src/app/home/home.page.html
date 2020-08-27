@@ -1,0 +1,15 @@
+
+<ion-content color="black" fullscreen #content>
+  <div class="buttonContent">
+    <audio id="myAudio" controls>
+      <source src="/assets/mp3/invitation.mp3" type="audio/mpeg">
+    </audio>
+    <div id="sectionByButton">&nbsp;</div>
+    <ion-button class="statusButton" size="large" color="primary" (click)="playVideo()">시작</ion-button>
+    <ion-button class="statusButton" size="large" color="warning" (click)="resetPage()">리셋</ion-button>
+  </div>
+  <video class="content" poster="/assets/image/bg.png" (ended)="videoEnd()" preload="auto" controls id="myvideo"></video>
+  <!-- 주소 변경 -->
+  <iframe id="mainPage" scrolling="yes" class="content" src="https://xcapehint.herokuapp.com/page/xcape_gangnam/room2_gangnam.html" scrolling="yes" ></iframe>
+  <!-- <iframe id="mainPage" class="content" src="http://localhost:3000/page/xcape_geondae/room1_geondae.html"  style="width:100%;height:100%" scrolling="yes" ></iframe> -->
+</ion-content>
